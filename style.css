@@ -1,5 +1,5 @@
 @font-face {font-family: 'bold';src: url("../Fonts/NotoNaskhArabicUI-Bold.ttf");}
-@font-face {font-family: 'zq';src: url("../Fonts/Zawgyi-One.ttf");}
+@font-face {font-family: 'zq';src: url("Zawgyi-One.ttf");}
 
 * {
   font-family: 'zq';
