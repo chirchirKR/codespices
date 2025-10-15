@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Krd Base | Home</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <meta name="author" content="Krd Chir"/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="../prism-themes/themes/prism-coldark-dark.css"/>
+  <!--link rel="stylesheet" href="/storage/emulated/0/Documents/Web/prism/src/plugins/line-numbers/line-numbers.css"/-->
+  	<link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700&display=swap" rel="stylesheet">
+</head>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="../prism/prism.js"></script>
+<!--script type="text/javascript" src="coder.js"></script-->
+<!--script type="text/javascript" src="codersJSON.js"></script-->
+<body class="line-numbers">
+  <header>
+    <h1>Coder Spices</h1><br>
+    <p style="text-align: center; font-size: 0.8rem; color: slategrey;"><u>Learning a Trick</u></p>
+    <div>
+      <input type="search" placeholder="Search..."/>
+      <button>Search</button>
+    </div>
+  </header>
+  <section>
+    <div class="update-code">
+      <div class="des-code" onclick="change('view', 'coder1');view()">An addition code</div>
+      <div class="coder" id="coder1">
+<pre class="language-js" style="padding: 5px; margin:0;font-family:'monospace',Arial;" id="cpy_1" ondblclick="copy_(this.id)"><code>
+//Use this code to get sum of two numbers
+function add(a,b,c) {  
+  if (!typeof c == "string") c = "";
+  switch (c.trim()) {
+    case "+": return a + b; break;
+    case "-": return a - b; break;
+    case "*": return a * b; break;
+    case "/": return a / b; break;
+    case "mod": return a % b; break;
+    default: return a + b;
+}<!--
+/**
+  * LICENCE FROM CODE_SPICES
+  * DO NOT MODIFY 
+  **/-->
+</code></pre>
+      </div>
+      <div class="des-props"><p class="prop1">Language: <span>Javascript</span></p><hr><p class="prop2">Coder: <span>Enemy of Error</span></p><hr><p>Site:<span onclick="locate('me.html')"> ReadMe</span></p></div>
+    </div>
+  </section>
+  <hr>
+  
+  <section>
+    <div class="update-code">
+      <div class="des-code" onclick="change('view', 'coder2');view()">
+        <b>Below is a code to do different math operations with just one call.</b><br>
+        Call: <br><pre class="language-js"><code>_math_(2,3,"+") // calls this function</code></pre>
+      </div>
+      <div class="coder" id="coder2">
+<pre class="language-js" style="padding: 5px; margin:0;font-family:'monospace',Arial;" id="cpy_1" ondblclick="copy_(this.id)"><code>
+function _math_(this_=0,that_=0,oper="+") {
+  if (this_ !== 0 && (this_ > 0 == false) && (this_ < 0 == false) || that_ !== 0 && (that_ > 0 == false ) && (that_ < 0 == false) ) {
+    console.log("\nError >>> NaN parameter..\n");
+    return 0;
+  }
+  if (typeof this_ != 'number' || typeof that_ != 'number') {
+    return 0;
+  }
+ 
+  let answ = 0, a = this_, b = that_;
+  const func = {
+    "+": (a,b) => a + b,
+    "-": (a,b) => a - b,
+    "/": (a,b) => a / b,
+    "*": (a,b) => a * b,
+    "**": (a,b) => Math.pow(a,b),
+    "_both": (a,b) => Math.floor(a/b),
+    "_a": (a,b) => Math.floor(a),
+    
+  }
+  
+  answ = func[oper.trim()](a,b);
+  return answ;
+}
+</code></pre>
+      </div>
+      <div class="des-props"><p class="prop1">Language: <span>Javascript</span></p><hr><p class="prop2">Coder: <span>Enemy of Error</span></p><hr><p>Site:<span onclick="locate('me.html')"> ReadMe</span></p></div>
+    </div>
+  </section>
+  <hr>
+  
+  <section>
+    <!--p class="adder">To Add yours <a href=" ">Send Me</a> your file.
+    </p-->
+  </section>
+  
+  <section id="codec"></section>
+</body>
+</html>
