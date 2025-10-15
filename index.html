@@ -23,40 +23,14 @@
       <button>Search</button>
     </div>
   </header>
-  <section>
-    <div class="update-code">
-      <div class="des-code" onclick="change('view', 'coder1');view()">An addition code</div>
-      <div class="coder" id="coder1">
-<pre class="language-js" style="padding: 5px; margin:0;font-family:'monospace',Arial;" id="cpy_1" ondblclick="copy_(this.id)"><code>
-//Use this code to get sum of two numbers
-function add(a,b,c) {  
-  if (!typeof c == "string") c = "";
-  switch (c.trim()) {
-    case "+": return a + b; break;
-    case "-": return a - b; break;
-    case "*": return a * b; break;
-    case "/": return a / b; break;
-    case "mod": return a % b; break;
-    default: return a + b;
-}<!--
-/**
-  * LICENCE FROM CODE_SPICES
-  * DO NOT MODIFY 
-  **/-->
-</code></pre>
-      </div>
-      <div class="des-props"><p class="prop1">Language: <span>Javascript</span></p><hr><p class="prop2">Coder: <span>Enemy of Error</span></p><hr><p>Site:<span onclick="locate('me.html')"> ReadMe</span></p></div>
-    </div>
-  </section>
-  <hr>
   
   <section>
     <div class="update-code">
-      <div class="des-code" onclick="change('view', 'coder2');view()">
+      <div class="des-code" onclick="change('view', 'coder1');view()">
         <b>Below is a code to do different math operations with just one call.</b><br>
         Call: <br><pre class="language-js"><code>_math_(2,3,"+") // calls this function</code></pre>
       </div>
-      <div class="coder" id="coder2">
+      <div class="coder" id="coder1">
 <pre class="language-js" style="padding: 5px; margin:0;font-family:'monospace',Arial;" id="cpy_1" ondblclick="copy_(this.id)"><code>
 function _math_(this_=0,that_=0,oper="+") {
   if (this_ !== 0 && (this_ > 0 == false) && (this_ < 0 == false) || that_ !== 0 && (that_ > 0 == false ) && (that_ < 0 == false) ) {
